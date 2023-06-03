@@ -51,10 +51,6 @@ const checkDuplicateTwo = (number) => {
 
 //function for validate pincode
 const validatePincode = (number) => {
-  console.log(checkLength(number));
-  console.log(checkDuplicate(number));
-  console.log(checkConsecutive(number));
-  console.log(checkDuplicateTwo(number));
   return (
     checkLength(number) &&
     checkDuplicate(number) &&
@@ -62,3 +58,5 @@ const validatePincode = (number) => {
     checkDuplicateTwo(number)
   );
 };
+
+console.log(validatePincode(887712));
